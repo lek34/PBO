@@ -8,7 +8,7 @@ public class bangunRuang {
         System.out.flush();  
     }
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		Scanner scanner = new Scanner(System.in);
 		char y ;
 		do { 
@@ -65,9 +65,11 @@ public class bangunRuang {
 		}
 			System.out.println("Apakah Anda Ingin Keluar Ke Menu Utama ?");
 			y = scanner.next().charAt(0);
+			bersihkanlayar();
 			
 		} 
 			while(y=='y');
+			
 		
 		
 	}
